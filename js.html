@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+     
+        .demo {
+            background-color: lightblue;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .vip {
+            color: red;
+        }
+    </style>
+    <title>JavaScript Task #1</title>
+</head>
+<body>
+
+    
+    <div id="demo">Hello, DEMO</div>
+
+    
+    <h1 id="vip">Hello, VIP!</h1>
+
+    <script>
+        
+        var demoDiv = document.getElementById('demo');
+        demoDiv.classList.add('demo');
+
+        
+        var vipHeader = document.getElementById('vip');
+        vipHeader.classList.add('vip');
+
+       
+        setTimeout(function() { vipHeader.classList.remove('vip');}, 2000); 
+    </script>
+</body>
+</html>
